@@ -3,8 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+
+    <script type="text/javascript">
+        function register() {alert(document.getElementById("id").value + " register success");}
+        function login() {alert(document.getElementById("id").value + " login success");}
+        function deregister() {alert(document.getElementById("id").value + " deregister success");}
+    </script>
 </head>
 <body>
-    Hello World!
+    <H3>ID</H3>
+    <input type="text" id="id">
+    <H3>PW</H3>
+    <input type="password" id="pw">
+    <br><br><br>
+    <button onclick="login()">Login</button>
+    <button onclick="register();">Register</button>
+    <button onclick="deregister()">Deregister</button>
 </body>
 </html>
