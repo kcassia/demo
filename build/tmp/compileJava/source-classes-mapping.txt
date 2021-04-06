@@ -1,2 +1,12 @@
+com/example/demo/UserRepository.java
+ com.example.demo.UserRepository
+com/example/demo/UserDAL.java
+ com.example.demo.UserDAL
+com/example/demo/UserDALImpl.java
+ com.example.demo.UserDALImpl
+com/example/demo/User.java
+ com.example.demo.User
 com/example/demo/DemoApplication.java
  com.example.demo.DemoApplication
+com/example/demo/UserController.java
+ com.example.demo.UserController
