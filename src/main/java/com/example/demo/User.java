@@ -22,7 +22,7 @@ public class User {
     }
 
     public String getUserName() { return userName; }
-    public void setName(String userName) { this.userName = userName; }
+    public void setUserName(String userName) { this.userName = userName; }
 
     public Date getCreationDate() { return creationDate; }
     public void setCreationDate(Date creationDate) { this.creationDate = creationDate; }
