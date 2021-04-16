@@ -16,10 +16,10 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping(value = "/")
-public class UserController {
+public class UserController
+{
 
     private final Logger LOG = LoggerFactory.getLogger(getClass());
-
     private final UserRepository userRepository;
 
     public UserController(UserRepository userRepository) {
@@ -28,7 +28,8 @@ public class UserController {
 
     // @RequestMapping(value = "", method = RequestMethod.GET)
     @GetMapping("")
-    public ResponseEntity getAllUsers() {
+    public ResponseEntity getAllUsers()
+    {
         LOG.info("Getting all users.");
         List<User> users = userRepository.findAll();
         return (users.size() > 0) ? ResponseEntity.ok(users) : ResponseEntity.notFound().build();
@@ -36,7 +37,8 @@ public class UserController {
 
     // @RequestMapping(value = "/{userId}", method = RequestMethod.GET)
     @GetMapping("/{userId}")
-    public ResponseEntity getUser(@PathVariable String userId) {
+    public ResponseEntity getUser(@PathVariable String userId)
+    {
         LOG.info("Getting user with ID: {}.", userId);
         User user = userRepository.findById(userId).orElse(null);
         return (user != null) ? ResponseEntity.ok(user) : ResponseEntity.notFound().build();
